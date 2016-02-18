@@ -6,6 +6,7 @@ end
 set -l pyenv_root ''
 if test -z "$PYENV_ROOT"
     set pyenv_root "$HOME/.pyenv"
+    set -x PYENV_ROOT "$HOME/.pyenv"
 else
     set pyenv_root "$PYENV_ROOT"
 end
