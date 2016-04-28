@@ -1,14 +1,17 @@
-if not command -s pyenv > /dev/null
-    echo "pyenv: command not found. See https://github.com/yyuu/pyenv"
-    exit 1
-end
-
 set -l pyenv_root ''
 if test -z "$PYENV_ROOT"
     set pyenv_root "$HOME/.pyenv"
     set -x PYENV_ROOT "$HOME/.pyenv"
 else
     set pyenv_root "$PYENV_ROOT"
+end
+
+set -x PATH $pyenv_root/bin $PATH
+if not command -s pyenv > /dev/null
+    echo "pyenv: command not found. See https://github.com/yyuu/pyenv"
+    exit 1
+else
+    set --erase PYENV_ROOT
 end
 
 set -x PATH $pyenv_root/shims $PATH
