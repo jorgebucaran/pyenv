@@ -14,7 +14,7 @@ fisher pyenv
 
 ## Notes
 
-You need <github.com/yyuu/pyenv> to use this plugin.
+You need <https://github.com/yyuu/pyenv> to use this plugin.
 
 This plugin replaces what `status --is-interactive; and . (pyenv init -|psub)`
 does in a more fishy way. This brings the startup time of your shell down
