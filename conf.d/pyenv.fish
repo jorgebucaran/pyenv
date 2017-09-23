@@ -12,7 +12,8 @@ else
     set pyenv_root "$PYENV_ROOT"
 end
 
-set -x PATH "$pyenv_root/shims" $PATH
-set -x PYENV_SHELL fish
-
+if status --is-login
+    set -x PATH "$pyenv_root/shims" $PATH
+    set -x PYENV_SHELL fish
+end
 command mkdir -p "$pyenv_root/"{shims,versions}
