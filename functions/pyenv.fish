@@ -4,7 +4,7 @@ function pyenv
 
     switch "$command"
         case rehash shell
-            . (pyenv "sh-$command" $argv | psub)
+            source (pyenv "sh-$command" $argv | psub)
 
         case \*
             command pyenv "$command" $argv
