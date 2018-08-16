@@ -12,6 +12,15 @@ With [fisherman]
 fisher pyenv
 ```
 
+You might also, need to put this @ `~/.config/fish/config.fish`:
+
+```
+set PYENV_ROOT ~/.pyenv
+set PYENV_SHELL fish
+
+set PATH ~/.pyenv/bin ~/.pyenv/shims $PATH
+```
+
 ## Notes
 
 You need <https://github.com/yyuu/pyenv> to use this plugin.
