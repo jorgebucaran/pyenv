@@ -1,4 +1,7 @@
-[![Slack Room][slack-badge]][slack-link]
+**This plugin for Fisherman is no longer maintained as I've switched away to using [asdf](https://github.com/asdf-vm/asdf) 
+instead. If this plugin is useful to you and you'd like to take over maintainership, please let me know.**
+
+---
 
 # Pyenv
 
@@ -9,7 +12,7 @@
 With [fisherman]
 
 ```
-fisher pyenv
+fisher daenney/pyenv
 ```
 
 ## Notes
