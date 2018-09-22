@@ -1,5 +1,5 @@
 if not command -s pyenv > /dev/null
-    echo "Install <github.com/yyuu/pyenv> to use 'pyenv'."
+    echo "Install <github.com/pyenv/pyenv> to use 'pyenv'."
     exit 1
 end
 
