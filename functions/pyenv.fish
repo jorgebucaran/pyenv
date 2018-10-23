@@ -3,8 +3,8 @@ function pyenv
     set -e argv[1]
 
     switch "$command"
-        case rehash shell
-            source (pyenv "sh-$command" $argv | psub)
+        case (command pyenv commands --sh)
+            source (command pyenv "sh-$command" $argv | psub)
 
         case \*
             command pyenv "$command" $argv
